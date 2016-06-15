@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:textAllCaps="true"
-        android:text="quantity" />
+        android:text="quantities" />
 
     <Button
         android:layout_width="50dp"
