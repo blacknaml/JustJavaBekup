@@ -17,30 +17,39 @@
         android:textAllCaps="true"
         android:text="quantities" />
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textAllCaps="true"
-        android:text="+"
-        android:layout_marginBottom="16dp"
-        android:onClick="kurangiQty"/>
-
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="0"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:id="@+id/quantity_text_view"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:textAllCaps="true"
-        android:layout_marginBottom="16dp"
-        android:onClick="tambahQty"
-        android:text="-"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:text="+"
+            android:layout_marginBottom="16dp"
+            android:onClick="kurangiQty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/quantity_text_view"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp"
+            android:onClick="tambahQty"
+            android:text="-"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
